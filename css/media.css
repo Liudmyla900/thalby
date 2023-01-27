@@ -11,26 +11,52 @@
     .main_banner h1 {
         font-size: 50px;
     }
-
-    @media only screen and (max-width: 1000px) {
-        .best_sellers .container {
-            display: flex;
+}
+@media only screen and (max-width: 1000px) {
+    .best_sellers .container {
+            flex-direction: column;
             justify-content: center;
         }
 
-        .main_banner img {
+    .main_banner img {
             position: center;
             display: block;
         }
-    }
-    @media only screen and (max-width: 767px) {
-        .features .items_description .item {
-            width: 50%;
-        }
-    }
-    @media only screen and (max-width: 500px) {
-        .features .items_description .item {
+}
+@media only screen and (max-width: 767px) {
+    .features .items_description .item {
             width: 100%;
-        }
+        margin-bottom: 30px;
+    }
+    .main_banner{
+        display: block;
+    }
+    .main_banner a{
+        margin-bottom: 10px;
+    }
+    .main_banner img{
+        width: 100%;
+    }
+    .people_and_society .container{
+        display: inline-block;
+        text-align: center;
+    }
+    .people_and_society .container_text{
+        display: inline-block;
+        text-align: center;
+    }
+    .people_and_society img{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .culture_and_heritage .container{
+        display: inline-block;
+        text-align: center;
+    }
+    .culture_and_heritage .container_text{
+        display: inline-block;
+        text-align: center;
+        margin: 0 0 15px 0;
     }
 }
+

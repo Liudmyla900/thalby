@@ -150,7 +150,6 @@ header nav ul li a {
     margin-bottom: 25px;
 }
 .best_sellers h4{
-    max-width: 156px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -180,6 +179,33 @@ header nav ul li a {
     text-decoration-line: underline;
     color: #000000;
 }
+.best_sellers .owl-item{
+    text-align: center;
+}
+.best_sellers .owl-item article{
+    display: inline-block;
+}
+.best_sellers .owl-dots{
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+}
+.best_sellers .owl-dot span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background: black;
+    border: 0.1rem solid #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.best_sellers .owl-dot.active span{
+    background: #869791;
+    border-color: #869791;
+}
+
 .people_and_society{
     padding-top: 76px;
     padding-bottom: 51px;
@@ -235,7 +261,6 @@ header nav ul li a {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    text-align: right;
     color: #000000;
     margin-bottom: 31px;
 }
@@ -245,7 +270,6 @@ header nav ul li a {
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
-    text-align: right;
     color: #000000;
     margin-bottom: 31px;
 }
@@ -255,7 +279,6 @@ header nav ul li a {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-    text-align: right;
     text-decoration-line: underline;
     color: #000000;
 }
@@ -330,7 +353,7 @@ header nav ul li a {
 #accordion{
     margin-bottom: 52px;
 }
-.ui-widjet-content{
+.ui-widget-content{
     border: none;
 }
 
@@ -363,4 +386,9 @@ header nav ul li a {
     transition: 0.3s;
     transform: rotate(90deg);
     display: inline-block;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: none;
+    background-color: transparent;
+    color: black;
 }
